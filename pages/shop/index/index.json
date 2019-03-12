@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "FACESHOP",
+  "usingComponents":{
+    "cart-portal":"../../../modules/cart/cart",
+    "nav-links":"../../../modules/nav/nav"
+  }
+}

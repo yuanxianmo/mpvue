@@ -1,0 +1,37 @@
+<!--pages/user/changePhone/changePhone.wxml-->
+
+<view class='container'>
+   <view class='step1' wx:if="{{step==1}}">
+      <view class='wrap'>
+         <view class='getSMS old'>
+            <input disabled value='13888888888'></input>
+            <button>获取验证码</button>
+         </view>
+         <input class='phoneNum' placeholder='请输入短信验证码' type='number'></input>
+         <view class='error'>
+            <view class='icon'>!</view>错误提示区
+         </view>
+         <button class='action' bindtap='step' data-step="{{2}}">下一步</button>
+      </view>
+      <view class='agreement'>手机不能接收验证码，
+         <navigator>请点击联系客服></navigator>
+      </view>
+   </view>
+   <view class='step2' wx:if="{{step==2}}">
+      <view class='wrap'>
+         <input class='phoneNum' placeholder='请输入您的手机号' type='number'></input>
+         <view class='getSMS'>
+            <input placeholder='请输入短信验证码'></input>
+            <button>获取验证码</button>
+         </view>
+         <view class='error'>
+            <view class='icon'>!</view>错误提示区
+         </view>
+         <button class='action'>绑定</button>
+      </view>
+      <view class='agreement'>绑定即视为同意
+         <navigator>《XX用户注册协议》</navigator>、
+         <navigator>《用户隐私政策》</navigator>
+      </view>
+   </view>
+</view>

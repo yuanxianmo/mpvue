@@ -1,0 +1,15 @@
+<!--pages/user/bindPhone/bindPhone.wxml-->
+<view class='container'>
+   <view class='wrap'>
+      <input class='phoneNum' placeholder='请输入您的手机号' type='number'></input>
+      <view class='getSMS'>
+         <input placeholder='请输入短信验证码'></input>
+         <button>获取验证码</button>
+      </view>
+      <button class='action'>绑定</button>
+   </view>
+   <view class='agreement'>绑定即视为同意
+      <navigator>《XX用户注册协议》</navigator>、
+      <navigator>《用户隐私政策》</navigator>
+   </view>
+</view>

@@ -1,0 +1,331 @@
+/* pages/shop/detail/detail.wxss */
+
+page {
+   padding-bottom: 65px;
+}
+
+#images {
+   position: relative;
+   padding-top: 100%;
+   background-color: white;
+}
+
+#images swiper {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+}
+
+#images swiper-item {
+   width: 100%;
+   height: 100%;
+}
+
+#images image {
+   width: 100%;
+   height: 100%;
+}
+
+#topInfo {
+   background-color: white;
+   margin-bottom: 12px;
+}
+
+#title {
+   padding: 15px 15px 0 15px;
+   font-size: 17px;
+   height: 44px;
+   line-height: 22px;
+   overflow: hidden;
+   color: #333;
+}
+
+#price {
+   padding: 12px 15px;
+}
+
+#price::first-letter {
+   font-size: 14px;
+   font-weight: normal;
+}
+
+#price .price {
+   color: #ff538a;
+   font-size: 30px;
+   font-weight: bold;
+   margin-right: 5px;
+}
+
+#price .originalPrice {
+   font-size: 14px;
+   color: #808080;
+   text-decoration: line-through;
+}
+
+#tags {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 12px 15px;
+}
+
+.tag {
+   border: 1px solid #dbdbdb;
+   height: 26px;
+   border-radius: 13px;
+   padding: 0 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #8f8f8f;
+}
+
+.tag:not(:last-child) {
+   margin-right: 10px;
+}
+
+#ad {
+   margin-bottom: 12px;
+}
+
+#ad image {
+   width: 100%;
+   vertical-align: top;
+}
+
+#menu {
+   background-color: white;
+   position: sticky;
+   top: 0;
+   display: flex;
+   z-index: 100;
+}
+
+#menu .item {
+   flex: 1;
+   position: relative;
+   font-size: 17px;
+   padding: 15px 0;
+   text-align: center;
+   color: #333;
+}
+
+#menu .item:not(:last-child):after {
+   content: "";
+   display: block;
+   width: 1px;
+   height: calc(100% - 24px);
+   top: 12px;
+   background-color: #e8e8e8;
+   position: absolute;
+   right: 0;
+   transform: scaleX(0.5);
+}
+
+#menu .item.active {
+   color: #ff538a;
+}
+
+#detail image {
+   width: 100%;
+   vertical-align: top;
+}
+
+#actions {
+   position: fixed;
+   width: 100%;
+   height: 52px;
+   display: flex;
+   left: 0;
+   bottom: 0;
+   z-index: 100;
+   background-color: white;
+}
+
+#actions navigator {
+   width: 74px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #575757;
+   font-size: 12px;
+}
+
+#actions navigator image {
+   height: 20px;
+   width: 100%;
+   margin-bottom: 4px;
+}
+
+#actions button {
+   border: none;
+   flex: 1;
+   color: white;
+   height: 100%;
+   border-radius: 0;
+   box-shadow: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: none;
+   outline: none;
+   font-size: 16px;
+}
+
+#addCart {
+   background-color: #fc85ab;
+}
+
+#buyNow {
+   background-color: #ff538a;
+}
+
+#specs, #service {
+   background-color: white;
+   padding: 0 12px 25px 12px;
+}
+
+.content {
+   animation: fadein 0.3s;
+}
+
+.content .head {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #333;
+   padding: 22px 0;
+}
+
+.content .head text {
+   margin: 0 20px;
+}
+
+.content .head:before, .content .head:after {
+   content: "";
+   display: block;
+   flex: 1;
+   height: 1px;
+   transform: scaleY(0.5);
+   background-color: #d6d7dc;
+}
+
+#specsTable {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+#specsTable .tableCell {
+   border: 1px solid #d6d7dc;
+   padding: 17px;
+}
+
+#specsTable .tableCell:first-child {
+   white-space: nowrap;
+}
+
+#specsTable .tableCell:last-child {
+   width: 100%;
+}
+
+#specs .body, #service .body {
+   color: #8f8f8f;
+   line-height: 1.7em;
+}
+
+#service .p {
+   display: block;
+   color: #8f8f8f;
+}
+
+#service .strong {
+   color: #333;
+}
+
+.fixedSelect .wrap .head {
+   position: relative;
+   display: flex;
+   padding: 0 15px;
+}
+
+.fixedSelect .wrap .head .thumb {
+   width: 130px;
+   height: 130px;
+   border: 3px solid white;
+   border-radius: 3px;
+   margin-top: -30px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+}
+
+.fixedSelect .wrap .head .count {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-self: stretch;
+   margin-bottom: 10px;
+}
+
+.fixedSelect .currentPrice {
+   color: #ff538a;
+   font-size: 22px;
+   margin-bottom: 2px;
+}
+
+.fixedSelect .stock {
+   font-size: 18px;
+   color: #333;
+}
+
+.fixedSelect .wrap .body .part {
+   display: flex;
+   padding: 20px 15px 5px 15px;
+   font-size: 15px;
+}
+
+.fixedSelect .wrap .body .part text {
+   padding: 10px 0;
+   width: 60px;
+   text-align: left;
+}
+
+.fixedSelect .wrap .body .part .right {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   flex: 1;
+}
+
+.fixedSelect .wrap .body .part .right .select {
+   padding: 8px 10px;
+   box-sizing: border-box;
+   width: calc(100% / 3 - 48px / 3);
+   margin-bottom: 15px;
+   background-color: transparent;
+   border: 1px solid #b3b3b3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: inherit;
+   border-radius: 3px;
+}
+
+.fixedSelect .wrap .body .part .right .select:not(:nth-of-type(3n)) {
+   margin-right: 24px;
+}
+.fixedSelect .wrap .body .part .right .select.active {
+   color: white;
+   border-color: #ff538a;
+   background-color: #ff538a;
+}
+.fixedSelect .wrap .body .part.quant {
+   padding-bottom: 20px;
+}
+
+.fixedSelect .quant .right {
+   display: flex;
+   justify-content: flex-end;
+}

@@ -1,0 +1,52 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+   <view id='topPoster'>
+      <open-data type="userAvatarUrl" class="background"></open-data>
+      <open-data id="userAvatar" type="userAvatarUrl"></open-data>
+      <open-data id="nickName" type="userNickName"></open-data>
+   </view>
+   <view id='topInfo'>
+      <view id='bindPhone'>
+         <text>找不到订单或者优惠券？绑定手机号试试</text>
+         <navigator url='/pages/user/bindPhone/bindPhone'>立即绑定</navigator>
+      </view>
+      <view id='orders'>
+         <view class='head pixelBottom'>
+            <text>我的订单</text>
+            <navigator url="/pages/order/list/list">查看全部订单</navigator>
+         </view>
+         <view class='body'>
+            <navigator>
+               <image src='/resource/images/user/wallet.png' mode='aspectFit'></image>
+               <view class='count'>99</view>
+               <text>待付款</text>
+            </navigator>
+            <navigator>
+               <image src='/resource/images/user/bag.png' mode='aspectFit'></image>
+               <text>待发货</text>
+            </navigator>
+            <navigator>
+               <image src='/resource/images/user/shipping.png' mode='aspectFit'></image>
+               <text>待收货</text>
+            </navigator>
+            <navigator>
+               <image src='/resource/images/user/order.png' mode='aspectFit'></image>
+               <text>已完成</text>
+            </navigator>
+         </view>
+      </view>
+   </view>
+   <view class='menu pixelTop pixelBottom'>
+      <navigator class='line more' url='/pages/order/cart/cart'>购物车</navigator>
+   </view>
+   <view class='menu pixelTop pixelBottom'>
+      <navigator class='line more pixelBottom' url='/pages/user/coupon/coupon'>我的优惠券</navigator>
+      <text class='line more pixelBottom' bindtap='chooseAddress'>我的收货地址</text>
+      <navigator class='line more pixelBottom' url='/pages/user/changePhone/changePhone'>绑定我的手机</navigator>
+      <navigator class='line more' url='/pages/user/about/about'>关于我们</navigator>
+   </view>
+   <view class='menu pixelTop pixelBottom'>
+      <navigator class='line more' url='/pages/user/service/service'>客户服务</navigator>
+   </view>
+   <nav-links route="{{route}}"></nav-links>
+</view>

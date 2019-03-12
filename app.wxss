@@ -1,0 +1,330 @@
+/**app.wxss**/
+@import 'animation.wxss';
+
+page {
+   background-color: #f7f7f7;
+   font-size: 14px;
+   box-sizing: border-box;
+}
+
+scroll-view {
+   box-sizing: border-box;
+}
+
+image {
+   vertical-align: top;
+}
+
+button {
+   line-height: normal;
+   border-radius: 0;
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+}
+
+button:active {
+   opacity: 0.6;
+}
+
+button::after {
+   display: none;
+}
+
+.sub {
+   vertical-align: bottom;
+   font-size: 0.65em;
+}
+
+.sup {
+   vertical-align: text-top;
+   font-size: 0.65em;
+}
+
+swiper-item {
+   backface-visibility: hidden;
+   transform-style: preserve-3d;
+}
+
+.block {
+   background-color: white;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.themeColor {
+   color: #ff538a;
+}
+
+.pixelTop {
+   position: relative;
+}
+
+.pixelTop:before {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+   top: 0;
+   left: 0;
+   position: absolute;
+   transform-origin: top center;
+   background-color: #e6e6e6;
+   transform: scaleY(0.5);
+   -webkit-transform: scaleY(0.5);
+   z-index: 1;
+}
+
+.pixelBottom {
+   position: relative;
+}
+
+.pixelBottom:after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+   bottom: 0;
+   left: 0;
+   position: absolute;
+   background-color: #e6e6e6;
+   transform: scaleY(0.5);
+   -webkit-transform: scaleY(0.5);
+   z-index: 1;
+}
+
+.pixelLeft {
+   position: relative;
+}
+
+.pixelLeft:before {
+   content: "";
+   display: block;
+   height: 100%;
+   width: 1px;
+   top: 0;
+   left: 0;
+   position: absolute;
+   transform-origin: left center;
+   background-color: #e6e6e6;
+   transform: scaleX(0.5);
+   -webkit-transform: scaleX(0.5);
+   z-index: 1;
+}
+
+.pixelRight {
+   position: relative;
+}
+
+.pixelRight:after {
+   content: "";
+   display: block;
+   height: 100%;
+   width: 1px;
+   top: 0;
+   right: 0;
+   position: absolute;
+   background-color: #e6e6e6;
+   transform: scaleX(0.5);
+   -webkit-transform: scaleX(0.5);
+   z-index: 1;
+}
+
+.menu {
+   background-color: white;
+   margin-bottom: 12px;
+   font-size: 15px;
+   padding-left: 15px;
+}
+
+.menu .line {
+   display: flex;
+   padding-right: 30px;
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABjklEQVR4XuXby22DQBSF4WuJAtKJ3cggl5B0kA6SVOASbFdApIG1UxkTjcQii2ys+zpHsAbE/8HuiIPs/DjsvF/UALXWc2vtKiLf4zi+sYGqAeZ5fm+tXXp4a+3GhqAGmKbpZRiGHxE5MiKoAXo0M4IJADOCGQArgikAI4I5ABuCCwATghsAC4IrAAOCOwA6QggAMkIYACpCKAAiQjgAGkIKABJCGgAKQioAAkI6QDYCBEAmAgxAFgIUQAYCHEA0AiRAJAIsQBQCNEAEAjyANwIFgCcCDcB/CCLyVUr51AyyjAAPETlt0fsB2PbHv/H3Usqr5u33aym+AK94CgDPeHgA73hogIh4WICoeEiAyHg4gOh4KICMeBiArHgIgMz4dIDs+FQAhPg0AJT4FACk+HAAtPhQAMT4MADU+BAA5Hh3APR4VwCGeDcAlngXAKZ4cwC2eFMAxngzANZ4EwDmeBOAWmsfJz+2icpkrtLOXc9cr57GlmU5ret667/OapfaZx7c6lw1gNWDZN1n9wC/ZdSJUOgIvT8AAAAASUVORK5CYII=);
+   background-repeat: no-repeat;
+   background-position: calc(100% - 10px) center;
+   background-size: 13px;
+   text-align: left;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.more {
+   padding-right: 25px;
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABjklEQVR4XuXby22DQBSF4WuJAtKJ3cggl5B0kA6SVOASbFdApIG1UxkTjcQii2ys+zpHsAbE/8HuiIPs/DjsvF/UALXWc2vtKiLf4zi+sYGqAeZ5fm+tXXp4a+3GhqAGmKbpZRiGHxE5MiKoAXo0M4IJADOCGQArgikAI4I5ABuCCwATghsAC4IrAAOCOwA6QggAMkIYACpCKAAiQjgAGkIKABJCGgAKQioAAkI6QDYCBEAmAgxAFgIUQAYCHEA0AiRAJAIsQBQCNEAEAjyANwIFgCcCDcB/CCLyVUr51AyyjAAPETlt0fsB2PbHv/H3Usqr5u33aym+AK94CgDPeHgA73hogIh4WICoeEiAyHg4gOh4KICMeBiArHgIgMz4dIDs+FQAhPg0AJT4FACk+HAAtPhQAMT4MADU+BAA5Hh3APR4VwCGeDcAlngXAKZ4cwC2eFMAxngzANZ4EwDmeBOAWmsfJz+2icpkrtLOXc9cr57GlmU5ret667/OapfaZx7c6lw1gNWDZN1n9wC/ZdSJUOgIvT8AAAAASUVORK5CYII=);
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: 13px;
+}
+
+.table {
+   display: table;
+}
+
+.tableRow {
+   display: table-row;
+}
+
+.tableCell {
+   display: table-cell;
+}
+
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   left: 0;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 200;
+   animation: fadeIn 0.5s;
+}
+
+.popup .sContent {
+   background-color: white;
+   border-radius: 3px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   width: 280px;
+   max-width: calc(100% - 80px);
+   animation: zoomIn 0.5s;
+}
+
+.fixedSelect {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   left: 0;
+   top: 0;
+   z-index: 100;
+   animation: fadeIn 0.3s;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.fixedSelect .wrap {
+   background-color: white;
+   max-height: calc(100% - 80px);
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   animation: fromBottom 0.3s;
+}
+
+.fixedSelect .main {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   flex: 1;
+}
+
+.fixedSelect .head {
+   flex-shrink: 0;
+}
+
+.fixedSelect .body {
+   overflow-y: auto;
+}
+
+.fixedSelect .done {
+   color: white;
+   background-color: #ff538a;
+   padding: 15px;
+   flex-shrink: 0;
+   width: 100%;
+}
+
+.numChange {
+   display: flex;
+   height: 38px;
+   box-sizing: border-box;
+   align-items: stretch;
+}
+
+.numChange button {
+   width: 38px;
+   border: none;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   border-radius: 0;
+   background-color: #f7f7f7;
+}
+
+.numChange button:not(:disabled) image.disabled {
+   display: none;
+}
+
+.numChange button:disabled image:not(.disabled) {
+   display: none;
+}
+
+.numChange button image {
+   width: 46%;
+   height: 46%;
+}
+
+.numChange .total {
+   width: 45px;
+   text-align: center;
+   font-size: 16px;
+   height: 100%;
+   background-color: #f7f7f7;
+   margin: 0 1px;
+}
+
+.camel {
+   color: #ff538a;
+   font-size: 17px;
+}
+
+.camel .unit {
+   font-size: 0.7em;
+}
+
+.camel .float {
+   font-size: 0.6em;
+}
+
+.spaceBetween {
+   display: flex;
+   justify-content: space-between;
+}
+
+.switch {
+   position: relative;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   background-color: white;
+   color: #252525;
+   z-index: 100;
+   flex-shrink: 0;
+}
+
+.switch .item {
+   flex: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.switch .item:active {
+   background-color: #eee;
+}
+
+.switch .dynBorder {
+   position: absolute;
+   height: 2px;
+   width: 0;
+   left: 0;
+   bottom: 0;
+   background-color: #ff4e87;
+   transition: all 0.3s;
+}

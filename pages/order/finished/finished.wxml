@@ -1,0 +1,16 @@
+<!--pages/order/finished/finished.wxml-->
+<view class='topBG'></view>
+<view class='container'>
+   <view class='status block'>
+      <image src='/resource/images/order/goods_pink.png' mode='widthFix' class='icon'></image>
+      <view class='right'>
+         <text class='title'>订单完成</text>
+         <text class='detail'>编号为4646124751的订单交易完成</text>
+      </view>
+   </view>
+   <view class='actions'>
+      <navigator url='/pages/order/list/list'>返回全部订单</navigator>
+      <navigator url='/pages/shop/index/index' class='main'>去首页逛逛</navigator>
+   </view>
+   <recommend></recommend>
+</view>

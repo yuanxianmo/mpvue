@@ -1,0 +1,30 @@
+<!--modules/recommend/recommend.wxml-->
+<view class='recommend'>
+   <view class='head'>
+      <image class='txt' src='/resource/images/recommend.png' mode='widthFix'></image>
+      <button class='refresh'>换一批
+         <image src='/resource/images/refresh.png' mode='widthFix'></image>
+      </button>
+   </view>
+   <view class='goodsList'>
+      <navigator class='topItem item block' url='/pages/shop/detail/detail?id=5'>
+         <view class='img'>
+            <image src='http://192.168.1.39/mz/images/demo1.jpg' mode='center'></image>
+            <view class='tags'>
+               <view class='tag'>美白</view>
+               <view class='tag'>保湿</view>
+            </view>
+         </view>
+         <view class='info'>
+            <view class='text pixelRight'>
+               <text class='name'>植物护肤，雪完美大品牌保湿美白特效</text>
+               <text class='themeColor price'>￥99.00</text>
+            </view>
+            <view class='fav'>
+               <image src='/resource/images/fav_active.png' mode='widthFix'></image>
+               <text class='themeColor'>226</text>
+            </view>
+         </view>
+      </navigator>
+   </view>
+</view>

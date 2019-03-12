@@ -1,0 +1,33 @@
+/* modules/confirm/confirm.wxss */
+@import '/app.wxss';
+
+.popup .sContent {
+   border-radius: 4px;
+   width: 280px;
+   max-width: calc(100% - 60px);
+   overflow: hidden;
+}
+
+.sContent .text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 10px;
+   min-height: 50px;
+   font-size: 18px;
+}
+
+.sContent .bts {
+   display: flex;
+}
+
+.bts button {
+   flex: 1;
+   padding: 15px 0;
+   font-size: 18px;
+   background-color: transparent;
+}
+
+.ok {
+   color: #ff4e87;
+}

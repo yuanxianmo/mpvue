@@ -1,0 +1,47 @@
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+}
+
+@keyframes fadeOut {
+   to {
+      opacity: 0;
+   }
+}
+
+@keyframes zoomIn {
+   0% {
+      transform: scale(0.5);
+   }
+
+   60% {
+      transform: scale(1.07);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes fromBottom {
+   0% {
+      transform: translateY(100%);
+   }
+}
+
+@keyframes fromRight {
+   0% {
+      transform: translateX(100%);
+   }
+}
+
+@keyframes clipCircle {
+   from {
+      clip-path: circle(20% at 50% 50%);
+   }
+
+   to {
+      clip-path: circle(100% at 50% 50%);
+   }
+}

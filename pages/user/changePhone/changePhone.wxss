@@ -1,0 +1,100 @@
+/* pages/user/changePhone/changePhone.wxss */
+
+page {
+   background-color: white;
+   padding-top: 50px;
+}
+
+.container {
+   width: 80%;
+   margin: auto;
+}
+
+.wrap input, .wrap button {
+   height: 50px;
+   border-radius: 25px;
+   padding: 0 15px;
+   box-sizing: border-box;
+}
+
+.phoneNum {
+   margin-bottom: 30px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+input {
+   background-color: #f5f5f5;
+   font-size: 16px;
+}
+
+.getSMS {
+   display: flex;
+}
+
+.step1 .getSMS {
+   margin-bottom: 20px;
+}
+
+.step2 .getSMS {
+   margin-bottom: 5px;
+}
+
+.step1 .phoneNum {
+   margin-bottom: 5px;
+}
+
+.error {
+   margin-bottom: 35px;
+}
+
+.getSMS input {
+   flex: 1;
+   margin-right: 30px;
+}
+
+.getSMS button {
+   border: 1px solid #ff538a;
+   color: #ff538a;
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+}
+
+.agreement {
+   color: #bebebe;
+}
+
+.agreement navigator {
+   color: #ff538a;
+   display: inline;
+}
+
+.action {
+   color: white;
+   background-color: #ff538a;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.error {
+   display: flex;
+   color: #b2b2b2;
+   align-items: center;
+}
+
+.error .icon {
+   color: white;
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   background-color: #ff538a;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 5px;
+}

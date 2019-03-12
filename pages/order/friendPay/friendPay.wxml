@@ -1,0 +1,88 @@
+<!--pages/order/friendPay/friendPay.wxml-->
+<view class='container'>
+   <view class='userInfo topInfo'>
+      <image class='userThumb' src='http://192.168.1.39/mz/images/demo2.jpg' mode='aspectFit'></image>
+      <text>STAR 发给朋友的代付邀请</text>
+   </view>
+   <view class='mainInfo info'>
+      <view class='total'>
+         <text class='title'>代付金额</text>
+         <text class='cost'><text class='sup'>￥</text>200.00</text>
+      </view>
+      <view class='desc'>
+         <view class='title'>好友代付说明</view>
+         <view class='part'>1.代付发起后24小时内无人付款，订单将自动取消；</view>
+         <view class='part'>2.如果订单申请退款，已支付金额将原路退还给代付人；</view>
+         <view class='part'>3.代付钱请您务必和好友再次确认，避免遇到诈骗行为。</view>
+      </view>
+   </view>
+   <view class='detailInfo info'>
+      <view class='head pixelBottom'>
+         <text>商品列表</text>
+         <text class='count'>共2个商品</text>
+      </view>
+      <view class='goodsList pixelBottom'>
+         <view class='goods'>
+            <image class='thumb' src='http://192.168.1.39/mz/images/demo2.jpg' mode='aspectFill'></image>
+            <view class='right'>
+               <view class='above'>
+                  <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                  <text class='price'>￥300.00</text>
+               </view>
+               <view class='below'>
+                  <text class='option'>规格 12#精品礼物</text>
+                  <text>x1</text>
+               </view>
+            </view>
+         </view>
+         <view class='goods'>
+            <image class='thumb' src='http://192.168.1.39/mz/images/demo2.jpg' mode='aspectFill'></image>
+            <view class='right'>
+               <view class='above'>
+                  <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                  <text class='price'>￥300.00</text>
+               </view>
+               <view class='below'>
+                  <text class='option'>规格 12#精品礼物</text>
+                  <text>x1</text>
+               </view>
+            </view>
+         </view>
+      </view>
+      <view class='costs pixelBottom'>
+         <view class='line'>
+            <text class='label'>商品总额</text>
+            <text class='cost'>￥336.00</text>
+         </view>
+         <view class='line'>
+            <text class='label'>优惠</text>
+            <text class='cost'>-￥40.00</text>
+         </view>
+         <view class='line'>
+            <text class='label'>运费</text>
+            <text class='cost'>￥0.00</text>
+         </view>
+         <view class='line'>
+            <text class='label'>应付总额</text>
+            <text class='cost'>￥296.00</text>
+         </view>
+      </view>
+      <view class='shipping'>
+         <view class='line'>
+            <text class='label'>收货人姓名</text>
+            <text class='value'>小明</text>
+         </view>
+         <view class='line'>
+            <text class='label'>收货人地址</text>
+            <text class='value'>广东省深圳市福田区沙头泰然工业园</text>
+         </view>
+         <view class='line'>
+            <text class='label'>联系方式</text>
+            <text class='value'>136****1955</text>
+         </view>
+      </view>
+   </view>
+   <view class='action'>
+      <button class='selectConfirm' open-type='share'>发送给朋友</button>
+   </view>
+</view>

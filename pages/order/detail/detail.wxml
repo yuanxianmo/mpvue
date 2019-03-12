@@ -1,0 +1,187 @@
+<!--pages/order/detail/detail.wxml-->
+<view class='container'>
+   <view class='topStatus'>
+      <image src='/resource/images/order/goods.png' mode='aspectFit'></image>
+      <text>订单已完成</text>
+   </view>
+   <view class='shipping block'>
+      <view class='express pixelBottom part more'>
+         <image class='icon' src='/resource/images/order/shipping.png' mode='aspectFit'></image>
+         <view class='right'>
+            <view class='status'>已发送至 广东省广州市天河集散中心某某站 某某某签收</view>
+            <view class='time'>2017-05-27 17:00:00</view>
+         </view>
+      </view>
+      <view class='address part'>
+         <image class='icon' src='/resource/images/order/location.png' mode='aspectFit'></image>
+         <view class='right'>
+            <view class='spaceBetween'>
+               <text>收货人：小明</text>
+               <text>13924651044</text>
+            </view>
+            <view>收货地址：广东省深圳市福田区沙头泰然工业园（车公庙地铁站附近）212栋206</view>
+            <view>配送方式：顺丰快递 456123465</view>
+         </view>
+      </view>
+   </view>
+   <view class='order block'>
+      <view class='orderInfo pixelBottom'>
+         <view class='left'>
+            <text>订单号：45646546</text>
+            <text>下单时间：2017-05-27 17:00:00</text>
+         </view>
+         <text class='status'>配送中</text>
+      </view>
+      <view class='goodsList pixelBottom'>
+         <view class='goods'>
+            <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+            <view class='right'>
+               <view class='above'>
+                  <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                  <text class='price'>￥300.00</text>
+               </view>
+               <view class='below'>
+                  <text class='option'>规格 12#精品礼物</text>
+                  <text>x1</text>
+               </view>
+            </view>
+         </view>
+         <view class='goods'>
+            <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+            <view class='right'>
+               <view class='above'>
+                  <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                  <text class='price'>￥300.00</text>
+               </view>
+               <view class='below'>
+                  <text class='option'>规格 12#精品礼物</text>
+                  <text>x1</text>
+               </view>
+            </view>
+         </view>
+      </view>
+      <view class='nums pixelBottom'>
+         <view class='table'>
+            <view class='tableRow'>
+               <view class='tableCell'>优惠：</view>
+               <view class='tableCell'>-￥40.00</view>
+            </view>
+            <view class='tableRow'>
+               <view class='tableCell'>运费：</view>
+               <view class='tableCell'>￥0.00</view>
+            </view>
+            <view class='tableRow'>
+               <view class='tableCell'>总额：</view>
+               <view class='tableCell price'>￥200.00</view>
+            </view>
+         </view>
+      </view>
+      <view class='actions'>
+         <button>更多</button>
+         <button class='main' bindtap='coverMode' data-mode='again'>再次购买</button>
+      </view>
+   </view>
+   <view class='contact'>
+      <button class='wechat'>
+         <image src='/resource/images/order/wechat.png' mode='widthFix'></image>
+         <text>在线客服</text>
+      </button>
+      <button class='phone pixelLeft'>
+         <image src='/resource/images/order/phone.png' mode='widthFix'></image>
+         <text>电话热线</text>
+      </button>
+   </view>
+   <view id='buyAgain' class='fixedSelect' wx:if="{{coverMode=='again'}}" animation="{{majorAnimation}}">
+      <view class='wrap' animation="{{minorAnimation}}">
+         <view class='main'>
+            <view class='head pixelBottom'>您将再次购买以下商品</view>
+            <view class='body'>
+               <view class='goodsList'>
+                  <view class='goods pixelBottom'>
+                     <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+                     <view class='right'>
+                        <view class='above'>
+                           <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                           <text class='price'>￥300.00</text>
+                        </view>
+                        <view class='below'>
+                           <text class='option'>规格 12#精品礼物</text>
+                           <text>x1</text>
+                        </view>
+                     </view>
+                  </view>
+                  <view class='goods over empty pixelBottom'>
+                     <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+                     <view class='right'>
+                        <view class='above'>
+                           <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                           <text class='price'>￥300.00</text>
+                        </view>
+                        <view class='below'>
+                           <text class='option'>规格 12#精品礼物</text>
+                           <text>x1</text>
+                        </view>
+                     </view>
+                  </view>
+                  <view class='goods over down pixelBottom'>
+                     <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+                     <view class='right'>
+                        <view class='above'>
+                           <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                           <text class='price'>￥300.00</text>
+                        </view>
+                        <view class='below'>
+                           <text class='option'>规格 12#精品礼物</text>
+                           <text>x1</text>
+                        </view>
+                     </view>
+                  </view>
+                  <view class='goods over down pixelBottom'>
+                     <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+                     <view class='right'>
+                        <view class='above'>
+                           <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                           <text class='price'>￥300.00</text>
+                        </view>
+                        <view class='below'>
+                           <text class='option'>规格 12#精品礼物</text>
+                           <text>x1</text>
+                        </view>
+                     </view>
+                  </view>
+                  <view class='goods over down pixelBottom'>
+                     <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+                     <view class='right'>
+                        <view class='above'>
+                           <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                           <text class='price'>￥300.00</text>
+                        </view>
+                        <view class='below'>
+                           <text class='option'>规格 12#精品礼物</text>
+                           <text>x1</text>
+                        </view>
+                     </view>
+                  </view>
+                  <view class='goods over down'>
+                     <image class='thumb' mode='aspectFit' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+                     <view class='right'>
+                        <view class='above'>
+                           <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                           <text class='price'>￥300.00</text>
+                        </view>
+                        <view class='below'>
+                           <text class='option'>规格 12#精品礼物</text>
+                           <text>x1</text>
+                        </view>
+                     </view>
+                  </view>
+               </view>
+            </view>
+         </view>
+         <view class='againBts pixelTop'>
+            <button class='ok'>确认</button>
+            <button class='cancel' bindtap='hideSelect'>取消</button>
+         </view>
+      </view>
+   </view>
+</view>

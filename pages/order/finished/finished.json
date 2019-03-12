@@ -1,0 +1,7 @@
+{
+   "navigationBarBackgroundColor": "#FF4E87",
+   "navigationBarTextStyle": "white",
+   "usingComponents": {
+      "recommend": "../../../modules/recommend/recommend"
+   }
+}

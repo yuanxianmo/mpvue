@@ -1,0 +1,74 @@
+<!--pages/order/paySuccess/paySuccess.wxml-->
+<view class='container'>
+   <view class='topInfo'>
+      <image class='icon' src='/resource/images/order/success.png' mode='aspectFit'></image>
+      <text>您已付款成功</text>
+   </view>
+   <view class='info baseInfo block'>
+      <view class='list'>
+         <view class='line'>
+            <text class='label'>订单编号：</text>
+            <text class='value'>5446451324</text>
+         </view>
+         <view class='line'>
+            <text class='label'>下单时间：</text>
+            <text class='value'>2017-5-27 11:40:15</text>
+         </view>
+         <view class='line'>
+            <text class='label'>付款时间：</text>
+            <text class='value'>2017-5-27 11:40:15</text>
+         </view>
+      </view>
+      <navigator url='/pages/user/center/center' class='toCenter'>去个人中心</navigator>
+   </view>
+   <view class='info shipping block'>
+      <view class='table'>
+         <view class='line tableRow'>
+            <text class='label tableCell'>商品金额：</text>
+            <text class='value tableCell'><text class='price'>￥300</text>(在线支付)</text>
+         </view>
+         <view class='line tableRow'>
+            <text class='label tableCell'>收货地址：</text>
+            <text class='value tableCell'>广东省深圳市福田区沙头泰然工业园（车公庙地铁站附近）212栋206</text>
+         </view>
+         <view class='line tableRow'>
+            <text class='label tableCell'>收货人：</text>
+            <text class='value tableCell'>136****1955</text>
+         </view>
+      </view>
+   </view>
+   <view class='goodsInfo info block'>
+      <view class='head pixelBottom'>
+         <text>商品列表</text>
+         <text class='count'>共2个商品</text>
+      </view>
+      <view class='goodsList'>
+         <view class='goods'>
+            <image class='thumb' src='http://192.168.1.39/mz/images/demo2.jpg' mode='aspectFill'></image>
+            <view class='right'>
+               <view class='above'>
+                  <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                  <text class='price'>￥300.00</text>
+               </view>
+               <view class='below'>
+                  <text class='option'>规格 12#精品礼物</text>
+                  <text>x1</text>
+               </view>
+            </view>
+         </view>
+         <view class='goods'>
+            <image class='thumb' src='http://192.168.1.39/mz/images/demo2.jpg' mode='aspectFill'></image>
+            <view class='right'>
+               <view class='above'>
+                  <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                  <text class='price'>￥300.00</text>
+               </view>
+               <view class='below'>
+                  <text class='option'>规格 12#精品礼物</text>
+                  <text>x1</text>
+               </view>
+            </view>
+         </view>
+      </view>
+   </view>
+</view>

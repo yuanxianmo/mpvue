@@ -1,0 +1,43 @@
+<!--pages/user/orderService/orderService.wxml-->
+<scroll-view class='container' scroll-y>
+   <button open-type='contact' class='goods block more' send-message-path='/pages/order/detail/detail' send-message-title='订单详情' show-message-card='true'>
+      <image src='http://192.168.1.39/mz/images/demo1.jpg' class='thumb' mode='aspectFill'></image>
+      <view class='right'>
+         <text class='sn'>订单编号:123456123465</text>
+         <text class='price'>￥100.00</text>
+         <text class='time'>下单时间：2017-07-07 07:07:07</text>
+      </view>
+   </button>
+   <button open-type='contact' class='goods block more'>
+      <image src='http://192.168.1.39/mz/images/demo1.jpg' class='thumb' mode='aspectFill' send-message-path='/pages/order/detail/detail' send-message-title='订单详情' show-message-card='true'>></image>
+      <view class='right'>
+         <text class='sn'>订单编号:123456123465</text>
+         <text class='price'>￥100.00</text>
+         <text class='time'>下单时间：2017-07-07 07:07:07</text>
+      </view>
+   </button>
+   <button open-type='contact' class='goods block more'>
+      <image src='http://192.168.1.39/mz/images/demo1.jpg' class='thumb' mode='aspectFill' send-message-path='/pages/order/detail/detail' send-message-title='订单详情' show-message-card='true'>></image>
+      <view class='right'>
+         <text class='sn'>订单编号:123456123465</text>
+         <text class='price'>￥100.00</text>
+         <text class='time'>下单时间：2017-07-07 07:07:07</text>
+      </view>
+   </button>
+   <button open-type='contact' class='goods block more'>
+      <image src='http://192.168.1.39/mz/images/demo1.jpg' class='thumb' mode='aspectFill' send-message-path='/pages/order/detail/detail' send-message-title='订单详情' show-message-card='true'>></image>
+      <view class='right'>
+         <text class='sn'>订单编号:123456123465</text>
+         <text class='price'>￥100.00</text>
+         <text class='time'>下单时间：2017-07-07 07:07:07</text>
+      </view>
+   </button>
+   <button open-type='contact' class='goods block more'>
+      <image src='http://192.168.1.39/mz/images/demo1.jpg' class='thumb' mode='aspectFill' send-message-path='/pages/order/detail/detail' send-message-title='订单详情' show-message-card='true'>></image>
+      <view class='right'>
+         <text class='sn'>订单编号:123456123465</text>
+         <text class='price'>￥100.00</text>
+         <text class='time'>下单时间：2017-07-07 07:07:07</text>
+      </view>
+   </button>
+</scroll-view>

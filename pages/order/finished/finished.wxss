@@ -1,0 +1,60 @@
+/* pages/order/finished/finished.wxss */
+
+.topBG {
+   height: 120px;
+   background-color: #ff538a;
+   margin-bottom: -100px;
+}
+
+.container {
+   padding: 0 15px 15px 15px;
+}
+
+.status {
+   border-radius: 5px;
+   margin-bottom: 15px;
+   display: flex;
+   padding: 25px 50px;
+   align-items: center;
+}
+
+.status .icon {
+   width: 98px;
+   margin-right: 55px;
+}
+
+.status .title {
+   font-size: 32px;
+   display: block;
+   color: #353535;
+   margin-bottom: 3px;
+}
+
+.status .detail {
+   color: #888;
+}
+
+.actions {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.actions navigator {
+   flex: 1;
+   border: 1px solid #888;
+   font-size: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 11px 0;
+   border-radius: 5px;
+}
+
+.actions navigator:not(:last-child) {
+   margin-right: 20px;
+}
+
+.actions .main {
+   color: #ff4e87;
+   border-color: #ff4e87;
+}

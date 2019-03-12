@@ -1,0 +1,28 @@
+/* pages/user/about/about.wxss */
+.banner {
+   width: 100%;
+}
+.main {
+   margin: -20%;
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 20px 100px 20px;
+   position: relative;
+   margin-right: 15px;
+   margin-left: 15px;
+}
+
+.logo {
+   color: #ff538a;
+   margin-bottom: 46px;
+   font-size: 34px;
+}
+
+.main .content {
+   color: #8f8f8f;
+   font-size: 13px;
+   line-height: 1.9em;
+}

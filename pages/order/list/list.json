@@ -1,0 +1,5 @@
+{
+   "usingComponents": {
+      "confirm": "../../../modules/confirm/confirm"
+   }
+}

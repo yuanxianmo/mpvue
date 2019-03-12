@@ -1,0 +1,111 @@
+<!--pages/order/cart/cart.wxml-->
+<view class='container pixelTop'>
+   <view class='goodsList'>
+      <view class='head'>
+         <button class='edit'>编辑</button>
+      </view>
+      <view class='list'>
+         <view class='goods'>
+            <button class='del'>删除</button>
+            <view class='shell'>
+               <view class='check'></view>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='title'>植物护肤雪完美大品牌保湿美白特效雪完美大品牌保湿美白特效美</view>
+                  <view class='option'>保湿补水十二支装</view>
+                  <view class='count'>
+                     <text class='camel price'>
+                        <text class='unit'>￥</text>
+                     <text class='int'>100</text>
+                     <text class='float'>.00</text>
+                     </text>
+                     <view class='numChange'>
+                        <button class='decrease'>
+                           <image src='/resource/images/decrease.png' mode='aspectFit'></image>
+                           <image src='/resource/images/decrease_disabled.png' class='disabled' mode='aspectFit'></image>
+                        </button>
+                        <input class='total' type='number' confirm-type='done' value='1'></input>
+                        <button class='increase'>
+                           <image src='/resource/images/increase.png' mode='aspectFit'></image>
+                           <image src='/resource/images/increase_disabled.png' class='disabled' mode='aspectFit'></image>
+                        </button>
+                     </view>
+                  </view>
+               </view>
+            </view>
+         </view>
+         <view class='goods'>
+            <button class='del'>删除</button>
+            <view class='shell'>
+               <view class='check'></view>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='title'>植物护肤雪完美大品牌保湿美白特效雪完美大品牌保湿美白特效美</view>
+                  <view class='option'>保湿补水十二支装</view>
+                  <view class='count'>
+                     <text class='camel price'>
+                        <text class='unit'>￥</text>
+                     <text class='int'>100</text>
+                     <text class='float'>.00</text>
+                     </text>
+                     <view class='numChange'>
+                        <button class='decrease'>
+                           <image src='/resource/images/decrease.png' mode='aspectFit'></image>
+                           <image src='/resource/images/decrease_disabled.png' class='disabled' mode='aspectFit'></image>
+                        </button>
+                        <input class='total' type='number' confirm-type='done' value='1'></input>
+                        <button class='increase'>
+                           <image src='/resource/images/increase.png' mode='aspectFit'></image>
+                           <image src='/resource/images/increase_disabled.png' class='disabled' mode='aspectFit'></image>
+                        </button>
+                     </view>
+                  </view>
+               </view>
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class='unavail goodsList'>
+      <view class='head'>
+         <text>已失效商品</text>
+         <button class='edit'>清空</button>
+      </view>
+      <view class='list'>
+         <view class='goods'>
+            <view class='shell'>
+               <view class='tag'>失效</view>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='title'>植物护肤雪完美大品牌保湿美白特效雪完美大品牌保湿美白特效美</view>
+                  <view class='option'>保湿补水十二支装</view>
+                  <view class='count'>
+                     <text class='camel price'>
+                        <text class='unit'>￥</text>
+                     <text class='int'>100</text>
+                     <text class='float'>.00</text>
+                     </text>
+                     <view class='quant'>x1</view>
+                  </view>
+               </view>
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class='action'>
+      <view class='left'>
+         <view class='checkAll'>
+            <view class='check'></view>
+            <text>全选</text>
+         </view>
+         <text class='total'>
+            <text>总计：</text>
+         <text class='camel price'>
+               <text class='unit'>￥</text>
+         <text class='int'>100</text>
+         <text class='float'>.00</text>
+         </text>
+         </text>
+      </view>
+      <button class='checkout' bindtap='checkout'>结算</button>
+   </view>
+</view>

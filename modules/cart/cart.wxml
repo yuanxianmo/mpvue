@@ -1,0 +1,4 @@
+<navigator class="cartPortal" url='/pages/order/cart/cart'>
+  <image src="{{staticPath}}images/bag.png" mode='scaleToFill'></image>
+  <div class="count">99</div>
+</navigator>

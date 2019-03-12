@@ -1,0 +1,161 @@
+/* pages/order/cart/cart.wxss */
+
+page {
+   padding-bottom: 57px;
+}
+
+.goodsList {
+   background-color: white;
+   padding: 6px 0;
+   margin-bottom: 12px;
+}
+
+.goodsList .head {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.goodsList .head .edit {
+   background-color: transparent;
+   color: #8f8f8f;
+   font-size: 15px;
+   padding: 15px 20px;
+   margin: 0;
+}
+
+.goods {
+   position: relative;
+}
+
+.goods .shell {
+   display: flex;
+   padding: 6px 12px;
+   background-color: white;
+   position: relative;
+}
+
+.goods .thumb {
+   width: 110px;
+   height: 110px;
+   border-radius: 5px;
+   margin-right: 8px;
+   flex-shrink: 0;
+}
+
+.goods .title {
+   line-height: 20px;
+   height: 40px;
+   overflow: hidden;
+   font-size: 16px;
+}
+
+.goods .option {
+   color: #8f8f8f;
+   font-size: 13px;
+}
+
+.goods .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.goods .price {
+   color: #ff538a;
+}
+
+.goods .price::first-letter {
+   font-size: 10px;
+}
+
+.goods .count {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.check {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   border: 1px solid #ddd;
+   margin-right: 8px;
+   flex-shrink: 0;
+   align-self: center;
+}
+
+.goods .del {
+   position: absolute;
+   width: 80px;
+   height: 100%;
+   right: 0;
+   top: 0;
+   color: white;
+   background-color: #ff538a;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.action {
+   position: fixed;
+   width: 100%;
+   height: 55px;
+   left: 0;
+   bottom: 0;
+   background-color: white;
+   display: flex;
+   z-index: 200;
+}
+
+.action .left {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+   padding: 0 15px;
+}
+
+.action .checkout {
+   height: 100%;
+   color: white;
+   background-color: #ff538a;
+   width: 130px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.checkAll {
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   color: #575757;
+}
+
+.action .total {
+   color: #575757;
+}
+
+.goodsList.unavail .head {
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 15px;
+}
+
+.goodsList.unavail .tag {
+   color: white;
+   white-space: nowrap;
+   flex-shrink: 0;
+   background-color: #8f8f8f;
+   height: 26px;
+   border-radius: 13px;
+   padding: 0 8px;
+   line-height: 26px;
+   align-self: center;
+   margin-right: 10px;
+}
+
+.goodsList.unavail .quant {
+   color: #8f8f8f;
+}

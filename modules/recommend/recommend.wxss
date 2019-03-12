@@ -1,0 +1,110 @@
+/* modules/recommend/recommend.wxss */
+@import '/app.wxss';
+
+.head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+}
+
+.head .txt {
+   width: 150px;
+}
+
+.head .refresh {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   color: #b2b2b2;
+   font-size: 16px;
+}
+
+.head .refresh image {
+   width: 16px;
+   margin-left: 4px;
+}
+
+.item {
+   border-radius: 6px;
+}
+
+.topItem {
+   margin-bottom: 16px;
+   overflow: hidden;
+}
+
+.topItem .img {
+   position: relative;
+   padding-top: calc(4 / 7 * 100%);
+}
+
+.topItem .img image {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+}
+
+.topItem .info {
+   display: flex;
+   align-items: center;
+   padding: 15px 10px;
+}
+
+.topItem .info .fav image {
+   width: 30px;
+   margin-bottom: 5px;
+}
+
+.topItem .info .text {
+   padding-right: 15px;
+   flex: 1;
+   overflow: hidden;
+}
+
+.topItem .info .text .name {
+   font-size: 17px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: block;
+   margin-bottom: 10px;
+}
+
+.topItem .info .fav {
+   padding: 6px 5px 6px 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.item .price {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.tags {
+   position: absolute;
+   right: 5px;
+   bottom: 7px;
+   display: flex;
+}
+
+.tag {
+   height: 24px;
+   border-radius: 12px;
+   border: 1px solid white;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 10px;
+   font-size: 12px;
+}
+
+.tag:not(:first-child) {
+   margin-left: 5px;
+}

@@ -1,0 +1,142 @@
+/* pages/order/paySuccess/paySuccess.wxss */
+
+.topInfo {
+   background-color: #ff538a;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   padding: 35px 0 85px 0;
+   margin-bottom: -55px;
+}
+
+.topInfo .icon {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin-right: 25px;
+   border: 4px solid white;
+   padding: 7px;
+}
+
+.topInfo text {
+   color: white;
+   font-size: 26px;
+}
+
+.info {
+   border-radius: 6px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   padding: 15px 12px 15px 12px;
+   margin: 0 15px 15px 15px;
+}
+
+.baseInfo .line {
+   margin-bottom: 5px;
+}
+
+.baseInfo .line .label {
+   color: #8f8f8f;
+}
+
+.baseInfo .line .value {
+   color: #575757;
+}
+
+.toCenter {
+   border: 1px solid #ff538a;
+   border-radius: 6px;
+   color: #ff538a;
+   padding: 11px 0;
+   text-align: center;
+   font-size: 18px;
+   margin-top: 15px;
+}
+
+.info.shipping .tableRow:not(:last-child) .tableCell {
+   padding-bottom: 5px;
+}
+
+.info.shipping .tableCell:first-child {
+   white-space: nowrap;
+   text-align: right;
+   color: #8f8f8f;
+}
+
+.info.shipping .tableCell:last-child {
+   color: #333;
+}
+
+.info.shipping .price {
+   color: #ff538a;
+   margin-right: 4px;
+}
+
+.info.goodsInfo {
+   border-radius: 6px;
+   background-color: white;
+   padding: 0;
+}
+
+.goodsInfo .head {
+   padding: 15px 12px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 15px;
+   color: #333;
+}
+
+.goodsInfo .head .count {
+   color: #8f8f8f;
+}
+
+.goodsInfo .goods {
+   display: flex;
+   padding: 6px 12px;
+   align-items: center;
+}
+
+.goodsInfo .goodsList {
+   padding: 7px 0;
+}
+
+.goodsInfo .goods .thumb {
+   width: 90px;
+   height: 90px;
+   margin-right: 15px;
+   flex-shrink: 0;
+}
+
+.goodsInfo .goods .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.goodsInfo .goods .above {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.goodsInfo .goods .title {
+   font-size: 16px;
+   margin-right: 30px;
+   line-height: 22px;
+   height: 44px;
+   overflow: hidden;
+}
+
+.goodsInfo .goods .price {
+   color: #ff4e87;
+   font-size: 15px;
+}
+
+.goodsInfo .goods .below {
+   color: #888;
+   display: flex;
+   justify-content: space-between;
+   font-size: 14px;
+}

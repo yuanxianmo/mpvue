@@ -1,0 +1,128 @@
+/**index.wxss**/
+page {
+  padding-bottom: 42px;
+}
+.item {
+  border-radius: 6px;
+}
+.container {
+  padding: 16px;
+}
+#topItem {
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+#topItem .img{
+  position: relative;
+  padding-top: calc(4 / 7 * 100%);
+}
+#topItem .img image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+#topItem .info {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+}
+#topItem .info .fav image {
+  width: 30px;
+  margin-bottom: 5px;
+}
+#topItem .info .text {
+  padding-right: 15px;
+  flex: 1;
+  overflow: hidden;
+}
+#topItem .info .text .name {
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  margin-bottom: 10px;
+}
+#topItem .info .fav {
+  padding: 6px 5px 6px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+#minorItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags {
+  position: absolute;
+  right: 5px;
+  bottom: 7px;
+  display: flex;
+}
+.tag {
+  height: 24px;
+  border-radius: 12px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.tag:not(:first-child) {
+  margin-left: 5px;
+}
+#minorItems .item {
+  width: calc(50% - 8px);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+#minorItems .item:nth-child(odd) {
+  margin-right: 16px;
+}
+#minorItems .item .img {
+  position: relative;
+  padding-top: 100%;
+}
+#minorItems .item .img image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+#minorItems .item .name {
+  font-size: 17px;
+  color: #252525;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+}
+#minorItems .item .info {
+  padding: 16px 10px;
+}
+#minorItems .item .num {
+  display: flex;
+}
+#minorItems .item .num .price {
+  flex: 1;
+}
+#minorItems .item .num .fav {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+#minorItems .item .num .fav image{
+  width: 15px;
+  margin-right: 4px;
+}

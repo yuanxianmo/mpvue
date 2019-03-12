@@ -1,0 +1,229 @@
+<!--pages/order/list/list.wxml-->
+<view class='container'>
+   <view class='pixelTop switch'>
+      <view class='item' bindtap='switch' data-index="0">全部</view>
+      <view class='item' bindtap='switch' data-index="1">待付款</view>
+      <view class='item' bindtap='switch' data-index="2">待发货</view>
+      <view class='item' bindtap='switch' data-index="3">待收货</view>
+      <view class='item' bindtap='switch' data-index="4">已完成</view>
+      <view class='dynBorder' style="transform:translateX({{dynBorder.left}});width:{{dynBorder.width}}"></view>
+   </view>
+   <scroll-view id='list' scroll-y="{{true}}">
+      <view class='item'>
+         <view class='head pixelBottom'>
+            <text class='sn'>订单号：9877756484</text>
+            <text class='status'>待付款</text>
+         </view>
+         <navigator class='goodsList pixelBottom' url='/pages/order/detail/detail?id=1'>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+         </navigator>
+         <view class='count pixelBottom'>
+            共2件商品<text decode>&nbsp;&nbsp;&nbsp;</text>总价：<text class='total'>￥200.00</text>
+         </view>
+         <view class='actions'>
+            <text class='countdown'>剩余12:00:00</text>
+            <view class='blank'></view>
+            <navigator>查看物流</navigator>
+            <button class='main' bindtap='finish' data-id='1'>确认收货</button>
+         </view>
+      </view>
+      <view class='item'>
+         <view class='head pixelBottom'>
+            <text class='sn'>订单号：9877756484</text>
+            <text class='status'>待付款</text>
+         </view>
+         <navigator class='goodsList pixelBottom'>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+         </navigator>
+         <view class='count pixelBottom'>
+            共2件商品<text decode>&nbsp;&nbsp;&nbsp;</text>总价：<text class='total'>￥200.00</text>
+         </view>
+         <view class='actions'>
+            <text class='countdown'>剩余12:00:00</text>
+            <view class='blank'></view>
+            <navigator>查看物流</navigator>
+            <button class='main'>去支付</button>
+         </view>
+      </view>
+      <view class='item'>
+         <view class='head pixelBottom'>
+            <text class='sn'>订单号：9877756484</text>
+            <text class='status'>待付款</text>
+         </view>
+         <navigator class='goodsList pixelBottom'>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+         </navigator>
+         <view class='count pixelBottom'>
+            共2件商品<text decode>&nbsp;&nbsp;&nbsp;</text>总价：<text class='total'>￥200.00</text>
+         </view>
+         <view class='actions'>
+            <text class='countdown'>剩余12:00:00</text>
+            <view class='blank'></view>
+            <navigator>查看物流</navigator>
+            <button class='main'>去支付</button>
+         </view>
+      </view>
+      <view class='item'>
+         <view class='head pixelBottom'>
+            <text class='sn'>订单号：9877756484</text>
+            <text class='status'>待付款</text>
+         </view>
+         <navigator class='goodsList pixelBottom'>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+         </navigator>
+         <view class='count pixelBottom'>
+            共2件商品<text decode>&nbsp;&nbsp;&nbsp;</text>总价：<text class='total'>￥200.00</text>
+         </view>
+         <view class='actions'>
+            <text class='countdown'>剩余12:00:00</text>
+            <view class='blank'></view>
+            <navigator>查看物流</navigator>
+            <button class='main'>去支付</button>
+         </view>
+      </view>
+      <view class='item'>
+         <view class='head pixelBottom'>
+            <text class='sn'>订单号：9877756484</text>
+            <text class='status'>待付款</text>
+         </view>
+         <navigator class='goodsList pixelBottom'>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+            <view class='goods'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='right'>
+                  <view class='top'>
+                     <text class='title'>植物护肤，雪完美大品牌保湿美白特效植物</text>
+                     <text class='price'>￥100.00</text>
+                  </view>
+                  <view class='bottom'>
+                     <text class='option'>规格 12#精品礼物</text>
+                     <text class='quant'>x2</text>
+                  </view>
+               </view>
+            </view>
+         </navigator>
+         <view class='count pixelBottom'>
+            共2件商品<text decode>&nbsp;&nbsp;&nbsp;</text>总价：<text class='total'>￥200.00</text>
+         </view>
+         <view class='actions'>
+            <text class='countdown'>剩余12:00:00</text>
+            <view class='blank'></view>
+            <navigator>查看物流</navigator>
+            <button class='main' bindtap='pay' data-id='3'>去支付</button>
+         </view>
+      </view>
+   </scroll-view>
+   <confirm wx:if="{{showPayType}}" bindhide="hidePay" bindclose="daifu" bindok="wxpay" text="请选择支付方式" cancel-text="朋友代付" ok-text="微信支付"></confirm>
+</view>

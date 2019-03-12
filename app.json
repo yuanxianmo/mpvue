@@ -1,0 +1,27 @@
+{
+   "pages": [
+      "pages/shop/index/index",
+      "pages/shop/detail/detail",
+      "pages/user/center/center",
+      "pages/order/list/list",
+      "pages/order/confirm/confirm",
+      "pages/order/friendPay/friendPay",
+      "pages/order/paySuccess/paySuccess",
+      "pages/order/cart/cart",
+      "pages/user/coupon/coupon",
+      "pages/order/detail/detail",
+      "pages/user/bindPhone/bindPhone",
+      "pages/user/changePhone/changePhone",
+      "pages/order/finished/finished",
+      "modules/recommend/recommend",
+      "pages/user/service/service",
+      "pages/user/orderService/orderService",
+      "pages/user/faq/faq",
+      "pages/user/about/about"
+   ],
+   "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTextStyle": "black"
+   }
+}

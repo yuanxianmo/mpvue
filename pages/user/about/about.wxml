@@ -1,0 +1,6 @@
+<!--pages/user/about/about.wxml-->
+<image class='banner' src='/resource/images/user/about.jpg' mode='widthFix'></image>
+<view class='main block'>
+   <text class='logo'>LOGO</text>
+   <text class='content'>关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们</text>
+</view>

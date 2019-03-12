@@ -1,0 +1,29 @@
+<!--pages/user/service/service.wxml-->
+<view class='container'>
+   <view class='block chat'>
+      <navigator class='row' url='/pages/user/orderService/orderService'>
+         <image src='/resource/images/user/msg.png' mode='aspectFit'></image>
+         <text>在线客服(订单问题反馈/咨询)</text>
+      </navigator>
+      <navigator class='row pixelTop'>
+         <image src='/resource/images/user/edit.png' mode='aspectFit'></image>
+         <text>意见和建议反馈</text>
+      </navigator>
+      <button class='row pixelTop' open-type='contact'>
+         <image src='/resource/images/user/coin.png' mode='aspectFit'></image>
+         <text>账户与财务咨询</text>
+      </button>
+      <button class='row pixelTop' open-type='contact'>
+         <image src='/resource/images/user/share.png' mode='aspectFit'></image>
+         <text>分销问题咨询</text>
+      </button>
+   </view>
+   <view class='block quests'>
+      <text class='head row'>常见问题</text>
+      <navigator class='more row pixelTop' url='/pages/user/faq/faq'>密码忘记怎么办？</navigator>
+      <navigator class='more row pixelTop' url='/pages/user/faq/faq'>账号忘记怎么办？</navigator>
+      <navigator class='more row pixelTop' url='/pages/user/faq/faq'>付款失败怎么办？</navigator>
+      <navigator class='more row pixelTop' url='/pages/user/faq/faq'>该怎么退货？</navigator>
+      <navigator class='more row pixelTop' url='/pages/user/faq/faq'>物流跟踪不到怎么办？</navigator>
+   </view>
+</view>

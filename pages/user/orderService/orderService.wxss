@@ -1,0 +1,51 @@
+/* pages/user/orderService/orderService.wxss */
+
+page {
+   height: 100%;
+}
+
+.container {
+   height: 100%;
+   padding: 12px;
+}
+
+.goods {
+   display: flex;
+   border-radius: 4px;
+   padding: 12px;
+   text-align: left;
+   background-position: calc(100% - 5px) center;
+}
+
+.goods:not(:last-of-type) {
+   margin-bottom: 12px;
+}
+
+.goods .thumb {
+   width: 100px;
+   height: 100px;
+   margin-right: 12px;
+   flex-shrink: 0;
+}
+
+.goods .right {
+   display: flex;
+   flex-direction: column;
+   padding: 5px 0;
+}
+
+.goods .sn {
+   color: #333;
+   margin-bottom: 5px;
+}
+
+.goods .price {
+   color: #ff538a;
+   flex: 1;
+   font-size: 15px;
+}
+
+.goods .time {
+   color: #8f8f8f;
+   font-size: 13px;
+}

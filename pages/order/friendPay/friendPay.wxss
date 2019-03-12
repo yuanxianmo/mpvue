@@ -1,0 +1,202 @@
+/* pages/order/friendPay/friendPay.wxss */
+
+.userInfo {
+   background-color: #ff538a;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   padding: 30px 0 90px 0;
+}
+
+.userThumb {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+
+.userInfo text {
+   color: white;
+   font-size: 16px;
+}
+
+.mainInfo {
+   border-radius: 5px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px 12px 25px 12px;
+   margin: -70px 15px 15px 15px;
+}
+
+.mainInfo .total {
+   padding: 15px 40px;
+   border: 4px solid #ff538a;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.mainInfo .total::before {
+   content: "";
+   display: block;
+   width: calc(100% + 16px);
+   position: absolute;
+   height: calc(100% - 30px);
+   top: 15px;
+   left: -8px;
+   box-sizing: border-box;
+   border-left: 8px solid white;
+   border-right: 8px solid white;
+}
+
+.mainInfo .total::after {
+   content: "";
+   display: block;
+   height: calc(100% + 16px);
+   position: absolute;
+   width: calc(100% - 30px);
+   left: 15px;
+   top: -8px;
+   box-sizing: border-box;
+   border-top: 8px solid white;
+   border-bottom: 8px solid white;
+}
+
+.mainInfo .total .title {
+   font-size: 13px;
+   color: #808080;
+   margin-bottom: 5px;
+}
+
+.mainInfo .total .cost {
+   font-size: 24px;
+}
+
+.mainInfo .desc {
+   line-height: 1.5em;
+}
+
+.mainInfo .desc .title {
+   font-size: 15px;
+   margin-bottom: 1px;
+}
+
+.mainInfo .desc .part {
+   color: #8f8f8f;
+}
+
+.detailInfo {
+   border-radius: 6px;
+   background-color: white;
+   margin: 0 15px 91px 15px;
+}
+
+.detailInfo .head {
+   padding: 15px 12px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 15px;
+   color: #333;
+}
+
+.detailInfo .head .count {
+   color: #8f8f8f;
+}
+
+.detailInfo .goods {
+   display: flex;
+   padding: 5px 12px;
+   align-items: center;
+}
+
+.detailInfo .goodsList {
+   padding: 7px 0;
+}
+
+.detailInfo .goods .thumb {
+   width: 90px;
+   height: 90px;
+   margin-right: 15px;
+   flex-shrink: 0;
+}
+
+.detailInfo .goods .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.detailInfo .goods .above {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.detailInfo .goods .title {
+   font-size: 16px;
+   margin-right: 30px;
+   line-height: 22px;
+   height: 44px;
+   overflow: hidden;
+}
+
+.detailInfo .goods .price {
+   color: #ff4e87;
+   font-size: 15px;
+}
+
+.detailInfo .goods .below {
+   color: #888;
+   display: flex;
+   justify-content: space-between;
+   font-size: 14px;
+}
+
+.costs, .shipping {
+   padding: 12px 12px;
+   color: #575757;
+}
+
+.costs .line, .shipping .line {
+   display: flex;
+   justify-content: space-between;
+}
+
+.costs .line:not(:last-child), .shipping .line:not(:last-child) {
+   margin-bottom: 5px;
+}
+
+.costs .cost {
+   color: #ff538a;
+}
+
+.action {
+   flex-shrink: 0;
+   background-color: white;
+   padding: 12px 15px;
+   position: fixed;
+   z-index: 100;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   box-sizing: border-box;
+}
+
+.selectConfirm {
+   background-color: #ff538a;
+   color: white;
+   height: 55px;
+   border-radius: 6px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px;
+}

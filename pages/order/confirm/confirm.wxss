@@ -1,0 +1,193 @@
+/* pages/order/confirm/confirm.wxss */
+
+.address {
+   padding: 12px 40px 12px 15px;
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABjklEQVR4XuXby22DQBSF4WuJAtKJ3cggl5B0kA6SVOASbFdApIG1UxkTjcQii2ys+zpHsAbE/8HuiIPs/DjsvF/UALXWc2vtKiLf4zi+sYGqAeZ5fm+tXXp4a+3GhqAGmKbpZRiGHxE5MiKoAXo0M4IJADOCGQArgikAI4I5ABuCCwATghsAC4IrAAOCOwA6QggAMkIYACpCKAAiQjgAGkIKABJCGgAKQioAAkI6QDYCBEAmAgxAFgIUQAYCHEA0AiRAJAIsQBQCNEAEAjyANwIFgCcCDcB/CCLyVUr51AyyjAAPETlt0fsB2PbHv/H3Usqr5u33aym+AK94CgDPeHgA73hogIh4WICoeEiAyHg4gOh4KICMeBiArHgIgMz4dIDs+FQAhPg0AJT4FACk+HAAtPhQAMT4MADU+BAA5Hh3APR4VwCGeDcAlngXAKZ4cwC2eFMAxngzANZ4EwDmeBOAWmsfJz+2icpkrtLOXc9cr57GlmU5ret667/OapfaZx7c6lw1gNWDZN1n9wC/ZdSJUOgIvT8AAAAASUVORK5CYII=);
+   margin-bottom: 12px;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: calc(100% - 7px) center;
+   background-size: 13px;
+}
+
+.address .currentAddress {
+   display: flex;
+   line-height: 1.7em;
+}
+
+.address .currentAddress .left {
+   color: #8f8f8f;
+   margin-right: 10px;
+   white-space: nowrap;
+}
+
+.noAddress {
+   display: flex;
+   align-items: center;
+   color: #8f8f8f;
+   font-size: 16px;
+}
+
+.address .currentAddress text {
+   display: block;
+}
+
+.count {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.goodsList {
+   background-color: white;
+   padding: 6px 0;
+   margin-bottom: 12px;
+}
+
+.goods {
+   display: flex;
+   padding: 6px 12px;
+}
+
+.goods .thumb {
+   width: 110px;
+   height: 110px;
+   border-radius: 5px;
+   margin-right: 8px;
+   flex-shrink: 0;
+}
+
+.goods .title {
+   line-height: 20px;
+   height: 40px;
+   overflow: hidden;
+   font-size: 16px;
+}
+
+.goods .option {
+   color: #8f8f8f;
+   font-size: 13px;
+}
+
+.goods .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.goods .price {
+   color: #ff538a;
+}
+
+.goods .price::first-letter {
+   font-size: 10px;
+}
+
+.misc {
+   padding: 0 10px;
+   background-color: white;
+}
+
+.misc .line {
+   padding: 15px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 16px;
+}
+
+.misc .line text:first-child {
+   white-space: nowrap;
+}
+
+.misc .line.more {
+   padding-right: 25px;
+}
+
+.misc .line input {
+   flex: 1;
+}
+
+.pays {
+   padding: 22px 12px;
+}
+
+.pays button {
+   border-radius: 4px;
+   padding: 15px 0;
+}
+
+.wxPay {
+   background-color: #09bb07;
+   color: white;
+   margin-bottom: 12px;
+}
+
+.friendPay {
+   background-color: white;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.numChange {
+   height: 32px;
+}
+
+.numChange button {
+   width: 32px;
+}
+
+.numChange .total {
+   width: 42px;
+   min-height: 0;
+}
+
+.fullCover {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: #f7f7f7;
+   left: 0;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   z-index: 300;
+   animation: fromRight .3s;
+}
+
+.fullCover .wrap {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+}
+
+.fullCover .action {
+   flex-shrink: 0;
+   background-color: white;
+   padding: 12px 15px;
+}
+
+.fullCover .selectConfirm {
+   background-color: #ff538a;
+   color: white;
+   padding: 15px;
+   border-radius: 5px;
+}
+.fullCover .select {
+   display: flex;
+   align-items: center;
+   margin-bottom: 12px;
+   background-color: white;
+   padding: 18px 15px;
+   font-size: 16px;
+}
+.fullCover .select image {
+   width: 18px;
+   margin-right: 15px
+}
+.fullCover .name {
+   margin-right: 15px;
+}
+.fullCover .price {
+   color: #8F8F8F;
+}

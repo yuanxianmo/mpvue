@@ -1,0 +1,10 @@
+<!--pages/user/faq/faq.wxml-->
+<view class='quest block'>
+   <text class='head pixelBottom'>我的财富为什么不能提现？怎么办？</text>
+   <view class='content'>
+      <rich-text type='text' nodes='<hr>'></rich-text>
+   </view>
+</view>
+<view class='needHelp'>没有找到相关问题？
+   <navigator>联系客服 ></navigator>
+</view>

@@ -1,0 +1,26 @@
+/* pages/user/faq/faq.wxss */
+
+.quest {
+   margin: 12px 12px 35px 12px;
+   border-radius: 4px;
+}
+
+.quest .head {
+   padding: 17px 12px;
+   display: block;
+   font-size: 16px;
+}
+
+.quest .content {
+   padding: 15px 12px;
+}
+
+.needHelp {
+   text-align: center;
+   color: #8f8f8f;
+}
+
+.needHelp navigator {
+   color: #ff538a;
+   display: inline;
+}

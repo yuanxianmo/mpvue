@@ -1,0 +1,162 @@
+<!--pages/shop/detail/detail.wxml-->
+<view class='container'>
+   <view id='images'>
+      <swiper indicator-dots="{{true}}" autoplay='true' indicator-color="#999" indicator-active-color='#222' circular="{{true}}">
+         <swiper-item wx:for="{{images}}" wx:key="{{index}}">
+            <image src='{{item}}' mode="aspectFill"></image>
+         </swiper-item>
+      </swiper>
+   </view>
+   <view id='topInfo'>
+      <view id='title'>
+         植物护肤，雪完美大品牌保湿美白特效植物护肤，雪完美大品牌保湿美白特效
+      </view>
+      <view id='tags'>
+         <view class='tag'>美白</view>
+         <view class='tag'>保湿</view>
+         <view class='tag'>嫩肤</view>
+      </view>
+      <view id='price' class='pixelTop'>
+         <text class='price'>￥39.80</text>
+         <text class='originalPrice'>￥56.00</text>
+      </view>
+   </view>
+   <view id='showOptions' class='menu' bindtap='showSelect' data-select='options'>
+      <view class='line more'>款式选择：补水套装</view>
+   </view>
+   <view id='ad'>
+      <image src='{{config.staticPath}}images/ad.jpg' mode='widthFix'></image>
+   </view>
+   <view id='menu'>
+      <view class='item {{content=="detail"?"active":""}}' data-page='detail' bindtap='setContent'>商品详情</view>
+      <view class='item {{content=="specs"?"active":""}}' data-page='specs' bindtap='setContent'>参数规格</view>
+      <view class='item {{content=="service"?"active":""}}' data-page='service' bindtap='setContent'>售后服务</view>
+   </view>
+   <view id='detail' class='content' hidden="{{content!=='detail'}}">
+      <image src='{{config.staticPath}}images/detail.jpg' mode='widthFix'></image>
+   </view>
+   <view id='specs' class='content' hidden="{{content!=='specs'}}">
+      <view class='head'>
+         <text>包装清单</text>
+      </view>
+      <text class='body'>补水套装100包 x 2盒</text>
+      <view class='head'>
+         <text>商品参数</text>
+      </view>
+      <view class='body table' id='specsTable'>
+         <view class='tableRow'>
+            <view class='tableCell'>商品编号</view>
+            <view class='tableCell'>12233</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>名称</view>
+            <view class='tableCell'>补水套装</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>净含量</view>
+            <view class='tableCell'>32g/包</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>生产日期</view>
+            <view class='tableCell'>2017.05.05</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>生产许可证</view>
+            <view class='tableCell'>GB123465</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>产品标准号</view>
+            <view class='tableCell'>12233</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>储存方法</view>
+            <view class='tableCell'>122335454545454545454545</view>
+         </view>
+         <view class='tableRow'>
+            <view class='tableCell'>阴凉处放置</view>
+            <view class='tableCell'>2年</view>
+         </view>
+      </view>
+   </view>
+   <view id='service' class='content' hidden="{{content!=='service'}}">
+      <view class='head'>
+         <text>服务承诺</text>
+      </view>
+      <view class='body'>
+         XXXX向您保证所售商品均为真品，拥有国家级食品QC认证，由XXXX自己的生产基地直接供货，没有中间商，从源头上严格把关，保证交到用户手中的都是真品正品。 注：因为时间差原因，用户收到的商品与商城图片、生厂日期可能不能完全一致，但我们保证为真品正品！并且与市场上同样新品一直，若本商城没有及时更新，请大家谅解
+      </view>
+      <view class='head'>
+         <text>权利申明</text>
+      </view>
+      <view class='body'>XXXX上的所有商品信息、客户评价、养生文章等内容，是天圣商城重要的经营资源，未经许可，禁止非法转载使用。</view>
+      <view class='head'>价格说明</view>
+      <view class='body'>
+         <text class='p'><text class='strong'>1.售价：</text>即为销售价，是您最终决定是够购买商品的依据。</text>
+         <text class='p'><text class='strong'>1.划线价：</text>商品展示的划线价为参考价，改价格可能是市场标价、零售价或者该商品在天圣平台上曾经展示过的销售价。</text>
+         <text class='p'><text class='strong'>1.折扣：</text>如无特殊说明，折扣指销售商在原价、或者划线价等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系客服进行咨询。</text>
+      </view>
+   </view>
+   <view id='actions'>
+      <navigator class='pixelTop' url='/pages/user/service/service'>
+         <image src='/resource/images/shop/msg.png' mode='aspectFit'></image>
+         <text>客服</text>
+      </navigator>
+      <navigator class='pixelTop' url='/pages/order/cart/cart'>
+         <image src='/resource/images/shop/cart.png' mode='aspectFit'></image>
+         <text>购物车</text>
+      </navigator>
+      <button id='addCart'>加入购物车</button>
+      <button id='buyNow' bindtap='buyNow'>立即购买</button>
+   </view>
+   <view class='fixedSelect' wx:if="{{coverMode=='options'}}" animation="{{majorAnimation}}">
+      <view class='wrap' animation="{{minorAnimation}}">
+         <view class='main'>
+            <view class='head pixelBottom'>
+               <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+               <view class='count'>
+                  <text class='currentPrice'>￥39.00</text>
+                  <text class='stock'>库存66666件</text>
+               </view>
+            </view>
+            <view class='body'>
+               <view class='options pixelBottom part'>
+                  <text>规格</text>
+                  <view class='optionList right'>
+                     <button class='option select'>补水</button>
+                     <button class='option select active'>补水</button>
+                     <button class='option select'>补水补水补水补水</button>
+                     <button class='option select'>补水</button>
+                     <button class='option select'>补水</button>
+                     <button class='option select'>补水</button>
+                  </view>
+               </view>
+               <view class='packages pixelBottom part'>
+                  <text>包装</text>
+                  <view class='packageList right'>
+                     <button class='package select active'>无包装</button>
+                     <button class='package select'>无包装</button>
+                     <button class='package select'>无包装</button>
+                  </view>
+               </view>
+               <view class='quant part'>
+                  <text>数量</text>
+                  <view class='right'>
+                     <view class='numChange'>
+                        <button class='decrease'>
+                           <image src='/resource/images/decrease.png' mode='aspectFit'></image>
+                           <image src='/resource/images/decrease_disabled.png' class='disabled' mode='aspectFit'></image>
+                        </button>
+                        <input class='total' type='number' confirm-type='done' value='1'></input>
+                        <button class='increase'>
+                           <image src='/resource/images/increase.png' mode='aspectFit'></image>
+                           <image src='/resource/images/increase_disabled.png' class='disabled' mode='aspectFit'></image>
+                        </button>
+                     </view>
+                  </view>
+               </view>
+            </view>
+         </view>
+         <button class='done' bindtap='hideSelect'>确定</button>
+      </view>
+   </view>
+</view>

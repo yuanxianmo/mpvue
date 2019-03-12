@@ -1,0 +1,308 @@
+<!--pages/user/coupon/coupon.wxml-->
+<view class='container'>
+   <view class='pixelTop switch'>
+      <view class='item' bindtap='switch' data-index="0">待使用(3)</view>
+      <view class='item' bindtap='switch' data-index="1">已使用(2)</view>
+      <view class='item' bindtap='switch' data-index="2">已失效(2)</view>
+      <view class='dynBorder' style="transform:translateX({{dynBorder.left}});width:{{dynBorder.width}}"></view>
+   </view>
+   <view class='couponList'>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+      <view class='coupon'>
+         <view class='left'>
+            <text class='deduct'>
+               <text class='sub'>￥</text>100
+            </text>
+            <text class='enough'>满500元可用</text>
+         </view>
+         <view class='middle'>
+            <view class='date'>2017-09-09至2017-09-10</view>
+            <view class='restrict'>
+               <text>限品类：仅可购买**类商品</text>
+               <text>限场次：仅可在xx活动中使用</text>
+            </view>
+         </view>
+         <view class='border'>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+            <view class='part'></view>
+         </view>
+         <navigator class='action'>
+            <text>立\n即\n使\n用</text>
+         </navigator>
+      </view>
+   </view>
+   <navigator class='toCenter pixelTop'>更多好券，去领券中心看看 ></navigator>
+</view>

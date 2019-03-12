@@ -1,0 +1,13 @@
+<!--modules/nav/nav.wxml-->
+<view class='nav'>
+  <navigator hover-class='active' hover-start-time='0' hover-stay-time='3000' url='/pages/shop/index/index' class='{{route=="pages/shop/index/index"?"active":""}}' open-type='redirect'>
+    <image src='/resource/images/nav/icon1_active.png' mode='aspectFit'></image>
+    <image src='/resource/images/nav/icon1.png' mode='aspectFit'></image>
+    <text>精美</text>
+  </navigator>
+  <navigator hover-class='active' hover-start-time='0' hover-stay-time='3000' url='/pages/user/center/center' class='{{route=="pages/user/center/center"?"active":""}}' open-type='redirect'>
+    <image src='/resource/images/nav/icon2_active.png' mode='aspectFit'></image>
+    <image src='/resource/images/nav/icon2.png' mode='aspectFit'></image>
+    <text>个人中心</text>
+  </navigator>
+</view>

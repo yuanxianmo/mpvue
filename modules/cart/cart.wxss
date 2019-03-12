@@ -1,0 +1,28 @@
+.cartPortal {
+  position: fixed;
+  right: 5px;
+  bottom: 30%;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+  background-color: white;
+  padding: 12px;
+}
+.cartPortal image {
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+}
+.cartPortal .count {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: calc(50% + 4px);
+  bottom: calc(50% + 4px);
+  background-color: #FF2424;
+  border-radius: 50%;
+  font-size: 9px;
+}

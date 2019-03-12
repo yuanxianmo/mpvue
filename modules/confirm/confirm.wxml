@@ -1,0 +1,10 @@
+<!--modules/confirm/confirm.wxml-->
+<view class='confirm popup' animation="{{majorAnimation}}" bindtap='hide'>
+   <view class='sContent' animation="{{minorAnimation}}" catchtap='noop'>
+      <text class='text pixelBottom'>{{text}}</text>
+      <view class='bts'>
+         <button class='cancel' bindtap='cancelFn'>{{cancelText}}</button>
+         <button class='ok pixelLeft' bindtap='okFn'>{{okText}}</button>
+      </view>
+   </view>
+</view>

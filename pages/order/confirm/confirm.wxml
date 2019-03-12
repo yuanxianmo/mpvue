@@ -1,0 +1,123 @@
+<!--pages/order/confirm/confirm.wxml-->
+<view class='container pixelTop'>
+   <view class='address' bindtap='chooseAddress'>
+      <view class='currentAddress' wx:if="{{address.errMsg=='chooseAddress:ok'}}">
+         <text class='left'>收货\n地址</text>
+         <text class='right'>
+            <text>{{address.provinceName+" "+address.cityName+" "+address.countyName+" "+address.detailInfo}}</text>
+         <text>{{address.userName+"   "+address.telNumber}}</text>
+         </text>
+      </view>
+      <view wx:else class='noAddress'>请选择收货地址</view>
+   </view>
+   <view class='goodsList'>
+      <view class='goods'>
+         <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+         <view class='right'>
+            <view class='title'>植物护肤雪完美大品牌保湿美白特效雪完美大品牌保湿美白特效美</view>
+            <view class='option'>保湿补水十二支装</view>
+            <view class='count'>
+               <text class='camel price'>
+                  <text class='unit'>￥</text>
+               <text class='int'>100</text>
+               <text class='float'>.00</text>
+               </text>
+               <view class='numChange'>
+                  <button class='decrease'>
+                     <image src='/resource/images/decrease.png' mode='aspectFit'></image>
+                     <image src='/resource/images/decrease_disabled.png' class='disabled' mode='aspectFit'></image>
+                  </button>
+                  <input class='total' type='number' confirm-type='done' value='1'></input>
+                  <button class='increase'>
+                     <image src='/resource/images/increase.png' mode='aspectFit'></image>
+                     <image src='/resource/images/increase_disabled.png' class='disabled' mode='aspectFit'></image>
+                  </button>
+               </view>
+            </view>
+         </view>
+      </view>
+      <view class='goods'>
+         <image class='thumb' mode='aspectFill' src='http://192.168.1.39/mz/images/demo2.jpg'></image>
+         <view class='right'>
+            <view class='title'>植物护肤雪完美大品牌保湿美白特效雪完美大品牌保湿美白特效美</view>
+            <view class='option'>保湿补水十二支装</view>
+            <view class='count'>
+               <text class='camel price'>
+                  <text class='unit'>￥</text>
+               <text class='int'>100</text>
+               <text class='float'>.00</text>
+               </text>
+               <view class='numChange'>
+                  <button class='decrease'>
+                     <image src='/resource/images/decrease.png' mode='aspectFit'></image>
+                     <image src='/resource/images/decrease_disabled.png' class='disabled' mode='aspectFit'></image>
+                  </button>
+                  <input class='total' type='number' confirm-type='done' value='1'></input>
+                  <button class='increase'>
+                     <image src='/resource/images/increase.png' mode='aspectFit'></image>
+                     <image src='/resource/images/increase_disabled.png' class='disabled' mode='aspectFit'></image>
+                  </button>
+               </view>
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class='misc'>
+      <view class='line pixelBottom more' bindtap='coverMode' data-mode='express'>
+         <text>配送方式</text>
+         <text>xx快递</text>
+      </view>
+      <view class='line pixelBottom'>
+         <text>买家留言：</text>
+         <input placeholder='本次交易的说明(选填)'></input>
+      </view>
+      <view class='line pixelBottom more' bindtap='coverMode' data-mode='coupon'>
+         <text>优惠券</text>
+         <text>省40元：满100减40元</text>
+      </view>
+      <view class='line'>
+         <text>合计</text>
+         <text class='camel price'>
+               <text class='unit'>￥</text>
+         <text class='int'>100</text>
+         <text class='float'>.00</text>
+         </text>
+      </view>
+   </view>
+   <view class='pays'>
+      <button class='wxPay' bindtap='wxPay'>微信支付</button>
+      <button class='friendPay' bindtap='friendPay'>找人代付</button>
+   </view>
+   <view class='fullCover pixelTop' wx:if='{{coverMode=="express"}}' animation='{{majorAnimation}}'>
+      <view class='wrap'>
+         <view class='select'>
+            <image src='/resource/images/check.png' mode='widthFix'></image>
+            <text class='name'>XX快递</text>
+            <text class='price'>免邮费</text>
+         </view>
+         <view class='select'>
+            <image src='/resource/images/check.png' mode='widthFix'></image>
+            <text class='name'>XX快递</text>
+            <text class='price'>邮费￥10.00</text>
+         </view>
+      </view>
+      <view class='action'>
+         <button class='selectConfirm' bindtap='hideSelect' data-mode='none'>确定</button>
+      </view>
+   </view>
+   <view class='fullCover pixelTop' wx:if='{{coverMode=="coupon"}}' animation='{{majorAnimation}}'>
+      <view class='wrap'>
+         <view class='select'>
+            <image src='/resource/images/check.png' mode='widthFix'></image>
+            <text class='name'>直减50</text>
+         </view>
+         <view class='select'>
+            <image src='/resource/images/check.png' mode='widthFix'></image>
+            <text class='name'>满100减50</text>
+         </view>
+      </view>
+      <view class='action'>
+         <button class='selectConfirm' bindtap='hideSelect' data-mode='none'>确定</button>
+      </view>
+   </view>
+</view>
